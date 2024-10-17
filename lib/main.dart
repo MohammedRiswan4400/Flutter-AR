@@ -22,14 +22,31 @@ class AnimatedGlb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-              child: ModelViewer(
-            src: 'assets/model/fan2.glb',
-            ar: true,
-          ))
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+                child: ModelViewer(
+              src: 'assets/model/fan2.glb',
+              ar: true,
+            )),
+            Expanded(
+                child: ModelViewer(
+              src: 'assets/model/alien.glb',
+              ar: true,
+            )),
+            Expanded(
+                child: ModelViewer(
+              src: 'assets/model/RioRoom.glb',
+              ar: true,
+            )),
+            Expanded(
+                child: ModelViewer(
+              src: 'assets/model/room3.glb',
+              ar: true,
+            )),
+          ],
+        ),
       ),
     );
   }
